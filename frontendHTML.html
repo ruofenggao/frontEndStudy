@@ -27,11 +27,78 @@
     <p>这是段落<br>这是换行！标签</p>
     <img src="https://www.baidu.com/img/bd_logo1.png" alt="百度logo">
     <!-- src标签属性(相对路径) alt替换文本（如果图加载失败才显示）title悬停显示文本（其他标签）-->
+    <br>
     <img src="./images/shenmewanyi.PNG" alt="捕获桌面" title="这是什么" height="200">
     <!-- controls显示播放控件 autoplay自动播放（有些不支持）loop循环播放 -->
+    <br>
     <audio src="./musics/Joji - Glimpse of Us.mp3" controls loop></audio>
     <!-- 其他的同音频一样 autoplay需要配合谷歌浏览器的mute使用 -->
+    <br>
     <video src="./videos/08276a9fd3f983dd72c66d685f414ea1.mp4" controls autoplay muted loop></video>
+    <br>
+    <!-- **超链接 a标签 开发初期不知道地址时用#（空链接）target页面打开形式-->
+    <a href="https://www.baidu.com" target="_blank">百度</a>
+    <br>
+    <a href="./frontendHTMLtemp.html" target="_self">测试一下跳转</a>
+    <!--  -->
+    <!--  -->
+    <!-- 无序列表 ul标签只允许包含li标签li可以包含任意-->
+    <ul>
+        <li>这是列表1</li>
+        <li>这是列表2</li>
+        <li>这是列表3</li>
+    </ul>
+    <!-- 有序列表 ol标签只允许包含li标签li可以包含任意-->
+    <ol>
+        <li>这是有序列表1</li>
+        <li>这是有序列表2</li>
+        <li>这是有序列表3</li>
+    </ol>
+    <!-- 定义列表 dl标签只允许包含dt和dd标签dt可以包含任意-->
+    <dl>
+        <dt>这是定义列表1</dt>
+        <dd>这是定义列表1的描述</dd>
+        <dt>这是定义列表2</dt>
+        <dd>这是定义列表2的描述</dd>
+        <dt>这是定义列表3</dt>
+        <dd>这是定义列表3的描述</dd>
+    </dl>
+    <!-- 表格 table标签只允许包含tr标签tr只允许包含th和td标签th和td可以包含任意-->
+    <!-- border边框宽度 width表格宽度 height表格高度(一般在css里面设置)-->
+    <!-- caption表格标题 th表头 td表格内容 -->
+    <!-- 标签thead表示头部 tbody表示主体 tfoot表示底部 -->
+    <!-- 圈住tab向右 tab + shift向左-->
+    <!-- 合并单元格：跨行合并rowspan，跨列合并colspan -->
+    <table border="5" width="500" height="600">
+        <caption><strong>这是表格标题</strong></caption>
+        <thead>
+            <tr>
+                <th>这是表头1</th>
+                <th>这是表头2</th>
+                <th>这是表头3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>这是表格1</td>
+                <td rowspan="2">这是表格2合并之后</td>
+                <td>这是表格3</td>
+            </tr>
+            <tr>
+                <td>这是表格1</td>
+                <!-- <td rowspan="2">这是表格2</td> 上下合并只保留最上，删除其他-->
+                <td>这是表格3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>这是表格1</td>
+                <td colspan="2">这是表格2合并之后</td>
+                <!-- <td>这是表格3</td> 左右合并只保留最左合并，删除其他-->
+            </tr>
+        </tfoot>
+    </table>
+
 </body>
 
 </html>
