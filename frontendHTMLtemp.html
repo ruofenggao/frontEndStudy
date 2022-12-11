@@ -1,12 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <strong>什么东西</strong>
+    <strong>个人简介填写</strong>
+    <audio src="./musics/Joji - Glimpse of Us.mp3" controls loop></audio>
+    <hr>
+    <img src="./images/标头.PNG" alt="甘棠科技" title="您好">
+    <hr>
+    <!-- 第一部分 -->
+    <fieldset>
+        <legend>基本信息</legend>
+        <br>
+        <form action="">
+            <hr>
+            <br>
+            姓名：<label><input type="text" name="name" id="name" placeholder="请输入姓名"></label>
+            <br>
+            <br>
+            如果已有账号请输入密码或注册：<label><input type="password" name="password" id="password" placeholder="请输入密码"></label>
+            <br>
+            <br>
+            <button type="submit">登录</button>&nbsp;&nbsp;<button type="reset">清空</button>&nbsp;&nbsp;<button
+                type="button">注册</button>
+            <hr>
+        </form>
+        <form action="">
+            <br>
+            <br>
+            性别：<label><input type="radio" name="gender">男</label> <label><input type="radio"
+                    name="gender">女</label><label><input type="radio" name="gender" checked>保密</label>
+            <hr>
+            <br>
+            所在地：<label><select name="city" id="city">
+                    <option value="北京">北京</option>
+                    <option value="上海">上海</option>
+                    <option value="广州">广州</option>
+                    <option value="深圳">深圳</option>
+                </select></label>
+            <hr>
+            <br>
+            相关的编程语言经验：<input type="checkbox">C++&nbsp;&nbsp;<input type="checkbox">JAVA&nbsp;&nbsp;<input
+                type="checkbox">HTML&nbsp;&nbsp;<input type="checkbox">PYTHON
+            <br>
+            <br>
+            <button type="reset">清空</button>
+        </form>
+    </fieldset>
+    <br>
+    <!-- 第二部分 -->
+    <fieldset>
+        <legend>个人陈述</legend>
+        <br>
+        <form action="">
+            个人介绍：<p><textarea name="" id="" cols="20" rows="20" placeholder="300字以内"></textarea></p>
+            <button type="reset">清空</button>
+            <hr>
+        </form>
+        <br>
+        <br>
+        <form action="">
+            上传简历：<input type="file" name="" id="" multiple>
+        </form>
+    </fieldset>
+    <br>
+    <!-- 第三部分 -->
+    <fieldset>
+        <legend>协议及公司信息</legend>
+        <br>
+        <b>申请人同意书</b>
+        <br>
+        <ol>
+            <li>不会泄露给里三方</li>
+            <li>公司有义务审查申请人背景</li>
+            <li>没有犯罪记录</li>
+            <li>同意以上所有信息均属实</li>
+        </ol>
+        <br>
+        <label><input type="checkbox" checked>详细阅读并且同意</label>
+        <br>
+        <hr>
+        <br>
+        <a href="http://www.gantangsoftware.cn/info" target="_blank">公司官网</a>
+        <hr>
+        HR EMAIL：*****@***.com&nbsp;&nbsp;&nbsp;&nbsp;电话：***-***-****
+    </fieldset>
+    <br>
+    <br>
+    <!-- 第四部分 -->
+    <!-- 这里怎么上传和清空所有 -->
+    <button type="submit">上传所有</button>&nbsp;&nbsp;<button type="reset">清空所有</button>&nbsp;&nbsp;
 </body>
+
 </html>
