@@ -18,6 +18,7 @@
     <u>这是一般的下划线</u> <ins>这是重要的下划线</ins>
     <s>这是一般的删除线</s> <del>这是重要的删除线</del>
     <!-- ctrl + D 一键选一样要改的东西 -->
+    <!-- alt + shift加方向键复制 -->
     <!-- 1-6级标题 -->
     <h1>这是一级标题</h1>
     <h2>这是二级标题</h2>
@@ -25,6 +26,8 @@
     <!-- 单标签 -->
     <hr>分割线
     <p>这是段落<br>这是换行！标签</p>
+    <hr>
+    <hr>
     <img src="https://www.baidu.com/img/bd_logo1.png" alt="百度logo">
     <!-- src标签属性(相对路径) alt替换文本（如果图加载失败才显示）title悬停显示文本（其他标签）-->
     <br>
@@ -40,8 +43,8 @@
     <a href="https://www.baidu.com" target="_blank">百度</a>
     <br>
     <a href="./frontendHTMLtemp.html" target="_self">测试一下跳转</a>
-    <!--  -->
-    <!--  -->
+    <hr>
+    <hr>
     <!-- 无序列表 ul标签只允许包含li标签li可以包含任意-->
     <ul>
         <li>这是列表1</li>
@@ -63,6 +66,8 @@
         <dt>这是定义列表3</dt>
         <dd>这是定义列表3的描述</dd>
     </dl>
+    <hr>
+    <hr>
     <!-- 表格 table标签只允许包含tr标签tr只允许包含th和td标签th和td可以包含任意-->
     <!-- border边框宽度 width表格宽度 height表格高度(一般在css里面设置)-->
     <!-- caption表格标题 th表头 td表格内容 -->
@@ -98,6 +103,88 @@
             </tr>
         </tfoot>
     </table>
+    <hr>
+    <hr>
+    <!-- 表单 -->
+    <!-- form标签 action提交地址 method提交方式 -->
+    <!-- input标签 type类型 name名称 value值 placeholder占位符 -->
+    <!-- type属性值 text password radio checkbox file submit reset button（默认无功能，之后配合js） -->
+    <form action="">
+        文本框<input type="text" placeholder="占位符">
+        <br>
+        密码框<input type="password" placeholder="密码说一下">
+        <br>
+        <!-- name分组 checked默认选中 -->
+        单选框<input type="radio" name="gender" checked>男 <input type="radio" name="gender">女
+        <br>
+        多选框<input type="checkbox" checked>
+        <br>
+        <!-- multiple上传多个文件 -->
+        文件选择<input type="file" multiple>
+        <br>
+        提交按钮<input type="submit" value="submit">
+        <br>
+        重置按钮<input type="reset">
+        <br>
+        普通按钮<input type="button" value="?????">
+        <br>
+        <!-- type同input -->
+        <button type="menu">button的标签的menu</button>
+        <button type="reset">button标签的reset</button>
+        <button type="submit">button标签的submit</button>
+    </form>
+    <hr>
+    <hr>
+    <form action="">
+        <fieldset>
+            <!-- fieldset标签 legend标签 -->
+            <legend>这是一个组</legend>
+            <!-- textarea标签 name名称 placeholder占位符 实际开发时针对样式用css设置 -->
+            <textarea name="" id="" cols="30" rows="10" placeholder="文本域"></textarea>
+            <br>
+            <!-- select标签 name名称 -->
+            <!-- option标签 value值 -->
+            <select name="" id="">
+                <option value="1">选项1</option>
+                <option value="2">选项2</option>
+                <option value="3">选项3</option>
+            </select>
+            <br>
+            <!-- label标签 可以直接点文字 for关联input的id 复杂的方法可以用id去跳转到别的页面？（猜测）-->
+            <label for="username">用户名</label>
+            <input type="text" id="username">
+            <br>
+            <label for="password">密码</label>
+            <input type="password" id="password">
+            <br>
+            <!-- label标签 简单写法直接框住 -->
+            <label> <input type="radio" name="gender" checked>男 </label>
+            <label><input type="radio" name="gender">女</label>
+        </fieldset>
+        <br>
+        <!-- 在一个form里面所以reset可以控制清空 -->
+        <button type="reset">reset</button>
+    </form>
+    <hr>
+    <hr>
+    <!-- 语义标签 -->
+    <!-- 无语义的两个标签div和span -->
+    <div>一行只能有一个的div标签</div>
+    <div>一行只能有一个的div标签</div>
+    <div>一行只能有一个的div标签</div>
+    <span>一行有多个的span标签</span>
+    <span>一行有多个的span标签</span>
+    <span>一行有多个的span标签</span>
+    <!-- 有语义的标签 header nav footer aside section article （做手机端网页可能会用到HTML5新版本） -->
+    <!-- <header>这是一个头部</header>
+    <nav>这是一个导航</nav>
+    <footer>这是一个底部</footer>
+    <aside>这是一个侧边栏</aside>
+    <section>这是一个区域</section> -->
+    <!-- 实体字符 -->
+    <br>
+    基本上只用记一个空格&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这个玩意儿就行了
+
 
 </body>
 
